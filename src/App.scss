@@ -1,0 +1,23 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import '~react-pro-sidebar/dist/scss/styles.scss';
+@import '../node_modules/react-big-calendar-modify/lib/css/react-big-calendar.css';
+@import './Bootswatch/variables';
+@import './Bootswatch/bootswatch';
+
+$sidebar-bg-color: '#ffffff';
+
+
+.rbc-month-view {
+    height: 80vh !important;
+    width: 100% !important;
+  }
+.root{
+  display: flex;
+}
+.main{
+  width: 100%;
+  margin: 20px;
+}
+.sidebar{
+position: fixed;
+}
