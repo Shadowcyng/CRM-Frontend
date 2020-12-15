@@ -1,17 +1,17 @@
-import { Login, SIGNUP, FAIL, LOGOUT } from '../ActionTypes/UserActionType';
+import {
+	Login,
+	SIGNUP,
+	FAIL,
+	LOGOUT,
+	REQUEST,
+} from '../ActionTypes/UserActionType';
 import axios from 'axios';
 import Cookie from 'js-cookie';
 
 export const signup = (name, email, password, confirmPassword) => async (
 	dispatch
 ) => {
-	console.log(
-		'name, email, password, confirmPassword',
-		name,
-		email,
-		password,
-		confirmPassword
-	);
+	dispatch({ type: REQUEST });
 	try {
 		const { data } = await axios.post('/user/signup', {
 			name,
@@ -27,6 +27,7 @@ export const signup = (name, email, password, confirmPassword) => async (
 };
 
 export const login = (email, password) => async (dispatch) => {
+	dispatch({ type: REQUEST });
 	try {
 		const { data } = await axios.post('/user/login', { email, password });
 		dispatch({ type: Login, payload: data });

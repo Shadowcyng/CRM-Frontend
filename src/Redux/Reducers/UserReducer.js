@@ -1,4 +1,10 @@
-import { Login, SIGNUP, FAIL, LOGOUT } from '../ActionTypes/UserActionType';
+import {
+	Login,
+	SIGNUP,
+	FAIL,
+	LOGOUT,
+	REQUEST,
+} from '../ActionTypes/UserActionType';
 
 const initialState = {
 	loading: true,
@@ -8,6 +14,11 @@ const initialState = {
 
 export const UserReducer = (state = initialState, action) => {
 	switch (action.type) {
+		case REQUEST:
+			return {
+				...state,
+				loading: true,
+			};
 		case SIGNUP:
 			return {
 				userInfo: action.payload,

@@ -21,10 +21,10 @@ const Login = (props) => {
 		}
 	}, [userInfo]);
 
-	const handleSubmit = (e) => {
+	const handleSubmit = async (e) => {
 		e.preventDefault();
 		console.log('kya b');
-		dispatch(login(email, password));
+		await dispatch(login(email, password));
 	};
 	return (
 		<>

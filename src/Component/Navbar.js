@@ -15,7 +15,16 @@ const Navbar = () => {
 	};
 	return (
 		<>
-			<div style={{ position: 'sticky', top: 0, zIndex: 100 }}>
+			<div
+				style={{
+					overflow: 'hidden',
+					position: 'fixed',
+					width: '100%',
+					top: 0,
+					right: 0,
+					zIndex: 100,
+				}}
+			>
 				<nav className='navbar navbar-expand-lg navbar-dark bg-dark'>
 					<a className='navbar-brand' href='#'>
 						CRM

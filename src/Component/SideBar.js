@@ -30,7 +30,6 @@ const SideBar = ({ open, setOpen }) => {
 				breakPoint='md'
 			>
 				<Switch
-					defaultChecked
 					color='primary'
 					checked={open}
 					onChange={handleChange}

@@ -1,10 +1,20 @@
 import React from 'react';
-import MyCalendar from '../MyCalender';
+import MyCalendar from '../Calendar/MyCalendar';
+import '../../App.scss';
 
 const Home = () => {
 	return (
 		<div>
-			<MyCalendar />
+			<div>
+				{window.location.pathname === '/addEvent' ? (
+					<MyCalendar addEvent={true} />
+				) : (
+					<MyCalendar />
+				)}
+				{/* <div>
+					<div className='colorbox'></div>
+				</div> */}
+			</div>
 		</div>
 	);
 };

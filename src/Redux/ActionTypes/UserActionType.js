@@ -1,3 +1,4 @@
+export const REQUEST = 'REQUEST';
 export const Login = 'LOGIN';
 export const SIGNUP = 'SIGNUP';
 export const FAIL = 'FAIL';

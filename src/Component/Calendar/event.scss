@@ -1,0 +1,29 @@
+@import '../../Bootswatch/variables';
+.event__details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    // flex-direction: 10px;
+}
+.event__slot-heading{
+    display: flex;
+    flex-direction: column;
+}
+.event__heading-value{
+    font-weight: bolder;
+
+    flex-direction: column;
+}
+
+.event__heading{
+    margin-bottom: 10px;
+    font-weight: bolder;
+    color: $red;
+    font-size: 16px;
+}
+.event__value{
+    margin-bottom: 10px;
+    font-weight: bolder;
+    color: $gray-200;
+    font-size: 16px;
+}
